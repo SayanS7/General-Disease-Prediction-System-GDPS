@@ -1,0 +1,36 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+.form{
+   width: 50%;
+   margin: auto;
+   margin-top: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid black;
+   text-align: center;
+}
+label , input{
+   font-size: 1.2rem;
+   margin: .5em;
+}
+input{
+   width: 7vw;
+}
+label::after{
+   content: "\a";
+   white-space: pre;
+}
+button{
+   font-size: 1.4rem;
+   margin: .5rem;
+}
+.buttons{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}

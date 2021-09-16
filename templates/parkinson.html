@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/static/styles.css">
+   <title>Parkinson Disease Prediction</title>
+</head>
+<body>
+   <ul>
+      <a href="index.html" class="home">Home</a>
+      <a href="heart.html" class="heart">Heart</a>
+      <a href="diabetes.html" class="diabetes">Diabetes</a>
+      <a href="parkinson.html" class="parkinson">Parkinson</a>
+      <a href="about.html" class="about">About</a>
+      <a href="contact.html" class="contact">Contact</a>
+   </ul>
+   <h1>{{prediction}}</h1>
+   <form action="/parkinsonpredict" method="POST" class="form">
+      <!--submits to predict page in a POST method-->
+      <div class="MDVP:Fo(Hz)">
+         <label for="MDVP:Fo(Hz)">MDVP:Fo(Hz)</label>
+         <input type="text" name="MDVP:Fo(Hz)" required>
+      </div>
+      <div class="MDVP:Fhi(Hz)">
+         <label for="MDVP:Fhi(Hz)">MDVP:Fhi(Hz)</label>
+         <input type="text" name="MDVP:Fhi(Hz)" required>
+      </div>
+      <div class="MDVP:Flo(Hz)">
+         <label for="MDVP:Flo(Hz)">MDVP:Flo(Hz)</label>
+         <input type="text" name="MDVP:Flo(Hz)" required>
+      </div>
+      <div class="MDVP:Jitter(%)">
+         <label for="MDVP:Jitter(%)">MDVP:Jitter(%)</label>
+         <input type="text" name="MDVP:Jitter(%)" required>
+      </div>
+      <div class="MDVP:Jitter(Abs)">
+         <label for="MDVP:Jitter(Abs)">MDVP:Jitter(Abs)</label>
+         <input type="text" name="MDVP:Jitter(Abs)" required>
+      </div>
+      <div class="MDVP:RAP">
+         <label for="MDVP:RAP">MDVP:RAP</label>
+         <input type="text" name="MDVP:RAP" required>
+      </div>
+      <div class="MDVP:PPQ">
+         <label for="MDVP:PPQ">MDVP:PPQ</label>
+         <input type="text" name="MDVP:PPQ" required>
+      </div>
+      <div class="Jitter:DDP">
+         <label for="Jitter:DDP">Jitter:DDP</label>
+         <input type="text" name="Jitter:DDP" required>
+      </div>
+      <div class="MDVP:Shimmer">
+         <label for="MDVP:Shimmer">MDVP:Shimmer</label>
+         <input type="text" name="MDVP:Shimmer" required>
+      </div>
+      <div class="MDVP:Shimmer(dB)">
+         <label for="MDVP:Shimmer(dB)">MDVP:Shimmer(dB)</label>
+         <input type="text" name="MDVP:Shimmer(dB)" required>
+      </div>
+      <div class="Shimmer:APQ3">
+         <label for="Shimmer:APQ3">Shimmer:APQ3</label>
+         <input type="text" name="Shimmer:APQ3" required>
+      </div>
+      <div class="Shimmer:APQ5">
+         <label for="Shimmer:APQ5">Shimmer:APQ5</label>
+         <input type="text" name="Shimmer:APQ5" required>
+      </div>
+      <div class="MDVP:APQ">
+         <label for="dpf">MDVP:APQ</label>
+         <input type="text" name="MDVP:APQ" required>
+      </div>
+      <div class="Shimmer:DDA">
+         <label for="age">Shimmer:DDA</label>
+         <input type="text" name="Shimmer:DDA" required>
+      </div>
+      <div class="NHR">
+         <label for="NHR">NHR</label>
+         <input type="text" name="NHR" required>
+      </div>
+      <div class="HNR">
+         <label for="age">HNR</label>
+         <input type="HNR" name="HNR" required>
+      </div>
+      <div class="dpf">
+         <label for="dpf">RPDE</label>
+         <input type="text" name="RPDE" required>
+      </div>
+      <div class="age">
+         <label for="age">DFA</label>
+         <input type="text" name="DFA" required>
+      </div>
+      <div class="dpf">
+         <label for="dpf">spread1</label>
+         <input type="text" name="spread1" required>
+      </div>
+      <div class="age">
+         <label for="age">spread2</label>
+         <input type="text" name="spread2" required>
+      </div>
+      <div class="dpf">
+         <label for="dpf">D2</label>
+         <input type="text" name="D2" required>
+      </div>
+      <div class="age">
+         <label for="age">PPE</label>
+         <input type="text" name="PPE" required>
+      </div>
+      <div class="buttons">
+         <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+      </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/static/styles.css">
+   <title>Diabetes Prediction</title>
+</head>
+<body>
+   <ul>
+      <a href="index.html" class="home">Home</a>
+      <a href="heart.html" class="heart">Heart</a>
+      <a href="diabetes.html" class="diabetes">Diabetes</a>
+      <a href="parkinson.html" class="parkinson">Parkinson</a>
+      <a href="about.html" class="about">About</a>
+      <a href="contact.html" class="contact">Contact</a>
+   </ul>
+   <h1>{{prediction}}</h1>
+   <form action="/diabetespredict" method="POST" class="form">
+      <!--submits to predict page in a POST method-->
+      <div class="pregnencies">
+         <label for="pregnencies">pregnencies</label>
+         <input type="text" name="pregnencies" required>
+      </div>
+      <div class="glucose">
+         <label for="glucose">glucose</label>
+         <input type="text" name="glucose" required>
+      </div>
+      <div class="bloodpressure">
+         <label for="bloodpressure">Blood Pressure</label>
+         <input type="text" name="bloodpressure" required>
+      </div>
+      <div class="skinthickness">
+         <label for="skinthickness">Skin Thickness</label>
+         <input type="text" name="skinthickness" required>
+      </div>
+      <div class="insulin">
+         <label for="insulin">Insulin</label>
+         <input type="text" name="insulin" required>
+      </div>
+      <div class="bmi">
+         <label for="bmi">BMI</label>
+         <input type="text" name="bmi" required>
+      </div>
+      <div class="dpf">
+         <label for="dpf">Diabetes Pedigree Function</label>
+         <input type="text" name="dpf" required>
+      </div>
+      <div class="age">
+         <label for="diabetesage">age</label>
+         <input type="text" name="diabetesage" required>
+      </div>
+      <div class="buttons">
+         <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+      </div>
+   </form>
+</body>
+</html>

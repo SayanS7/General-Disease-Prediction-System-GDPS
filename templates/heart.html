@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/static/styles.css">
+   <title>Heart Disease Prediction</title>
+</head>
+<body>
+   <ul>
+      <a href="index.html" class="home">Home</a>
+      <a href="heart.html" class="heart">Heart</a>
+      <a href="diabetes.html" class="diabetes">Diabetes</a>
+      <a href="parkinson.html" class="parkinson">Parkinson</a>
+      <a href="about.html" class="about">About</a>
+      <a href="contact.html" class="contact">Contact</a>
+   </ul>
+   <h1>{{prediction}}</h1>
+   <form action="/heartpredict" method="POST" class="form">
+      <!--submits to predict page in a POST method-->
+      <div class="age">
+         <label for="age">age</label>
+         <input type="text" name="age" required>
+      </div>
+      <div class="sex">
+         <label for="sex">sex</label>
+         <input type="text" name="sex" required>
+      </div>
+      <div class="cp">
+         <label for="cp">cp</label>
+         <input type="text" name="cp" required>
+      </div>
+      <div class="trestbps">
+         <label for="trestbps">trestbps</label>
+         <input type="text" name="trestbps" required>
+      </div>
+      <div class="chol">
+         <label for="choles">chol</label>
+         <input type="text" name="chol" required>
+      </div>
+      <div class="fbs">
+         <label for="fbs">fbs</label>
+         <input type="text" name="fbs" required>
+      </div>
+      <div class="restecg">
+         <label for="restecg">restecg</label>
+         <input type="text" name="restecg" required>
+      </div>
+      <div class="thalach">
+         <label for="thalach">thalach</label>
+         <input type="text" name="thalach" required>
+      </div>
+      <div class="exang">
+         <label for="exang">exang</label>
+         <input type="text" name="exang" required>
+      </div>
+      <div class="oldpeak">
+         <label for="oldpeak">oldpeak</label>
+         <input type="text" name="oldpeak" required>
+      </div>
+      <div class="slope">
+         <label for="slope">slope</label>
+         <input type="text" name="slope" required>
+      </div>
+      <div class="ca">
+         <label for="ca">ca</label>
+         <input type="text" name="ca" required>
+      </div>
+      <div class="thal">
+         <label for="thal">thal</label>
+         <input type="text" name="thal" required>
+      </div>
+      <div class="buttons">
+         <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+      </div>
+   </form>
+</body>
+
+</html>
