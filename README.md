@@ -11,3 +11,16 @@ E.g. Relationships between medical factors related to the disease and patterns, 
 
 We have employed Suport Vector Machine(SVM) and Logistic Regreesion as the Training algorithms. 
 The obtained results have illustrated that the designed diagnostic system can effectively predict the risk level of the specific diseases.
+
+The Application uses following technology:
+  i) Python ii) Flask iii) HTML iv) CSS
+
+Libraries Used : 
+  i) Pandas ii) Numpy iii) Scilearn  iv)Pickel
+  
+Team Members & Roles 
+  * Manoranjan Panigrahi (Backend Developer)
+  * Sayan Sen (Backend Developer)
+  * Swarnali Ghosh (Frontend Developer)
+  * Roshni Dey (Frontend Developer)
+  * Debapriya Mukherjee (Frontend Developer)
